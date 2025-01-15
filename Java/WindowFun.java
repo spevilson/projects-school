@@ -16,7 +16,7 @@ public class WindowFun extends JPanel {
         // create a new window
         var window = new JFrame();
 
-        // set the window to be 200 pixels by 200 pixels
+        // set the window to be 400 pixels by 400 pixels
         window.setSize(400,400);
 
         // close the app when the user closes the window
