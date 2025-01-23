@@ -79,21 +79,35 @@ class oceanHut extends JPanel{
         g.fillOval(320,35,75,30);
         g.fillOval(320,65,75,30);
 
-        int xPoints = [];
-        int yPoints = [];
+        // airplane!!
 
-
-        // airplane
-        g.setColor(Color.GRAY);
-        g.fillRect(225,40,60,16);
-        g.fillOval(217,40,16,16);
-        g.fillPolygon([285,285,301],[40,56,40], 3);
-
+        // cockpit
         g.setColor(Color.BLACK);
-        g.drawOval(240,46,20,5);
+        g.drawOval(200,36,20,10);
+        // fuselage
+        g.setColor(Color.GRAY);
+        g.fillRect(185,40,50,16);
+        g.fillOval(177,40,16,16);
+        // tail
+        g.fillPolygon(new int[] {235,235,261},new int[] {40,56,40}, 3);
+        // wings
+        g.fillPolygon(new int[] {200,235,215},new int[] {50,20,50}, 3);
+        g.fillPolygon(new int[] {200,175,215},new int[] {50,80,50}, 3);
+
+
+        // rope for banner
+        g.setColor(Color.BLACK);
+        g.drawPolygon(new int[] {261,271,271},new int[] {40,50,30},3);
+
+        // Banner
+        g.setColor(Color.GRAY);
+        g.fillRect(271,30,100,20);
+        g.fillPolygon(new int[] {371,371,381},new int[] {30,40,30},3);
+        g.fillPolygon(new int[] {371,371,381},new int[] {50,40,50},3);
 
         // Banner message
-
+        g.setColor(Color.RED);
+        g.drawString("GO SEASIDERS!", 276, 45);
 
     }
 
