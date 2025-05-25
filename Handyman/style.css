@@ -1,0 +1,68 @@
+header div{
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(53, 135, 203);
+}
+
+.centered {
+    top: 60%;
+    
+}
+
+.margin-5 {
+    margin: 5px;
+    border-radius: 3px;
+}
+
+
+.block {
+    display: block;
+}
+
+#reviews {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(156, 156, 156);
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+    border: thin solid black;
+    border-radius: 3px;
+}
+
+.child {
+    flex-flow: row wrap;
+}
+
+.profile {
+  
+    text-align: center;
+}
+
+.profile img, figcaption {
+    width: 60%; 
+}
+
+.profile figcaption {
+    margin-left: 20%;
+    border: thin solid black;
+    height: 230px;
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+
+
+.logo {
+    width:100px;
+
+}
