@@ -60,7 +60,9 @@ header {
   filter: invert(1);
 }
 
-
+.clr-koogreen {
+    color: green;
+}
 
 .logo {
     width:100px;
