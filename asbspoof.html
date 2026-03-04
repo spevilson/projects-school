@@ -1,668 +1,264 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
 <head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <meta name="robots" content="noindex,nofollow" />
-   <!-- Styles generated from theme -->
-   <link href="/api/internal/brand/theme/style-sheet?touch-point=SIGN_IN_PAGE&amp;v=1a85b8c0f67f0e9b84ed1196fede84365cdb92b68fbd137e314444b6c6391578e785643f3df71a19c44a72a1def85f87" rel="stylesheet" type="text/css">
-   <!-- Favicon from theme -->
-   <link rel="shortcut icon" href="https://ok3static2.oktacdn.com/bc/image/fileStoreRecord?id=fs01vvply7811hDGA1d8" type="image/x-icon" />
-   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#232f3e">
+  <meta name="description" content="Official Login page for Canvas student login, School Search Canvas, Canvas Network, Canvas Community, and Canvas Free For Teacher accounts.">
+  <meta name="robots" content="noindex,nofollow" />
+  <meta name="apple-itunes-app" content="app-id=480883488">
+<link rel="manifest" href="/web-app-manifest/manifest.json">
+  <meta name="sentry-trace" content="9cb94b9b67cd416cb332515c40003363-53fb519b83234115-0"/>
+  <title>Canvas Login | Instructure</title>
 
-   <title>BYU-Hawaii - Sign In</title>
-   <!-- Core widget js and css -->
-<script type="text/javascript"
-        src="https://ok3static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.4/js/okta-sign-in.next.js" integrity="sha384-v11HfgRKeMMyOOtzvCs7vxYYa184ZOAFS7MW3wZt8aDtKuprC0Lw7/dMoKji6wsi" crossorigin="anonymous"></script>
-<link rel="stylesheet"
-      type="text/css"
-      href="https://ok3static2.oktacdn.com/assets/js/sdk/okta-signin-widget/7.40.4/css/okta-sign-in.next.css"
-      integrity="sha384-fJyeHGzMxpU93EIEwEszWQiH+iw4MnNCcvkLPZ4PYPLlmRprsI4xxG8x/ofK5gGS"
-      crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Regular-bd03a2cc27.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Bold-cccb897485.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="https://du11hjcvx0uqb.cloudfront.net/dist/fonts/lato/extended/Lato-Italic-4eb103b4d1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css" media="screen" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec89532a9c377eb15ef41118ca61fb49/variables-6ceabaf6137deaa1b310c07895491bdd.css" media="all" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-67f93f90f6.css" media="all" />
+  <link rel="stylesheet" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/login-5916444d9c.css" media="screen" />
+  <link rel="apple-touch-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/apple-touch-icon-585e5d997d.png" />
+  <link rel="icon" type="image/x-icon" href="https://du11hjcvx0uqb.cloudfront.net/dist/images/favicon-e10d657a73.ico" />
 
-<!-- Customizable css theme options. Link your own stylesheet or override styles inline. -->
-<link rel="stylesheet"
-      type="text/css" href="" integrity="" crossorigin="anonymous">
-
-<!-- styles for custom sign in -->
-<link rel="stylesheet" type="text/css" href="https://ok3static2.oktacdn.com/assets/loginpage/css/custom-signin.a91af2abfd04662e499bd3e151150dbf.css" integrity="sha384-BhMidK4jYIQaVFKNVHUvbfdgrt4NVlnlTZMsOMWLdWkme3j1JcshKDNQiMssd7sN" crossorigin="anonymous">
-
-
-<script type="text/javascript" nonce="Y7PsqprL6cJiwQlvPOX9gg">
-    window.onerror = function (msg, _url, _lineNo, _colNo, error) {
-        if (window.console && window.console.error) {
-            if (error) {
-                console.error(error);
-            } else {
-                console.error(msg);
-            }
-        }
-
-        // Return true to suppress "Script Error" alerts in IE
-        return true;
-    };
+  
+  
+  <script>if (navigator.userAgent.match(/(MSIE|Trident\/)/)) location.replace('/ie-is-not-supported.html')</script>
+  <script>
+    INST = {"environment":"production","disableGooglePreviews":true,"logPageViews":true,"editorButtons":[]};
+    ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec89532a9c377eb15ef41118ca61fb49/variables-6ceabaf6137deaa1b310c07895491bdd.json","active_brand_config":{"md5":"ec89532a9c377eb15ef41118ca61fb49","variables":{"ic-brand-primary":"#ff9900","ic-brand-font-color-dark":"#232f3e","ic-brand-global-nav-bgd":"#232f3e","ic-brand-header-image":"https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/326/AWS-Academy_logo_RGB_REV.svg","ic-brand-mobile-global-nav-logo":"https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/5/AWS-Academy_logo_RGB.png","ic-brand-msapplication-tile-wide":"https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/6/AWS-Academy_logo_RGB_ALT-BLK.png","ic-brand-Login-body-bgd-color":"#232f3e","ic-brand-Login-logo":"https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/9/AWS-Academy_logo_RGB_REV.png"},"share":false,"name":null,"created_at":"2024-09-19T15:33:34Z","js_overrides":"https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/4452648/awsacademy_20240919.js","css_overrides":"","mobile_js_overrides":"","mobile_css_overrides":"","parent_md5":null},"confetti_branding_enabled":false,"url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec89532a9c377eb15ef41118ca61fb49/variables-6ceabaf6137deaa1b310c07895491bdd.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-a370c48efb.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-6ceabaf6137deaa1b310c07895491bdd.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-1d2c45ff3b.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/no_variables/bundles/fonts-eb4a10fb18.css"],"captcha_site_key":"6LftyLgZAAAAAC10tel8XGucbApMIY8-uFB_yVcN","current_user_id":null,"current_user_global_id":null,"current_user_uuid":null,"current_user_usage_metrics_id":null,"current_user_roles":null,"current_user_is_student":false,"current_user_types":null,"current_user_disabled_inbox":null,"current_user_visited_tabs":null,"discussions_reporting":true,"files_domain":"cluster339.canvas-user-content.com","group_information":null,"DOMAIN_ROOT_ACCOUNT_ID":"156910000000000001","DOMAIN_ROOT_ACCOUNT_UUID":"rYFdi7aohYT3YxtxK5alB7IVgChUhctnniibSQ9c","CAREER_THEME_URL":null,"CAREER_DARK_THEME_URL":null,"k12":false,"help_link_name":"Help","help_link_icon":"help","ADA_CHATBOT_ENABLED":false,"use_high_contrast":null,"auto_show_cc":null,"disable_celebrations":null,"disable_keyboard_shortcuts":null,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *","autoplay *","clipboard-write *","display-capture *"],"DEEP_LINKING_POST_MESSAGE_ORIGIN":"https://awsacademy.instructure.com","comment_library_suggestions_enabled":null,"SETTINGS":{"open_registration":true,"collapse_global_nav":null,"release_notes_badge_disabled":null,"can_add_pronouns":false,"show_sections_in_course_tray":true,"enable_content_a11y_checker":false,"suppress_assignments":false},"RAILS_ENVIRONMENT":"production","SENTRY_FRONTEND":{"dsn":"https://355a1d96717e4038ac25aa852fa79a8f@relay-pdx.sentry.insops.net/388","org_slug":"instructure","base_url":"https://sentry.insops.net","normalized_route":"/login/canvas","errors_sample_rate":"0.005","traces_sample_rate":"0.005","url_deny_pattern":"instructure-uploads.*amazonaws.com","revision":"canvas-lms@20260225.418"},"DATA_COLLECTION_ENDPOINT":"https://canvas-frontend-data-pdx-prod.inscloudgate.net/submit","DOMAIN_ROOT_ACCOUNT_SFID":"0012G00001eYJiaQAG","DIRECT_SHARE_ENABLED":false,"CAN_VIEW_CONTENT_SHARES":null,"FEATURES":{"account_level_blackout_dates":false,"assignment_edit_placement_not_on_announcements":false,"a11y_checker_additional_resources":true,"a11y_checker_close_issues":true,"a11y_checker_ga2_features":false,"block_content_editor_toolbar_reorder":false,"commons_new_quizzes":true,"consolidated_media_player":true,"courses_popout_sisid":true,"create_external_apps_side_tray_overrides":false,"dashboard_graphql_integration":false,"developer_key_user_agent_alert":true,"disallow_threaded_replies_fix_alert":true,"disallow_threaded_replies_manage":true,"discussion_ai_survey_link":false,"discussion_checkpoints":false,"discussion_permalink":true,"enhanced_course_creation_account_fetching":false,"explicit_latex_typesetting":false,"feature_flag_ui_sorting":true,"files_a11y_rewrite":true,"files_a11y_rewrite_toggle":true,"horizon_course_setting":false,"instui_for_import_page":true,"instui_header":false,"media_links_use_attachment_id":true,"multiselect_gradebook_filters":true,"nav_menu_links":false,"new_quizzes_media_type":true,"new_quizzes_navigation_updates":true,"permanent_page_links":true,"rce_a11y_resize":true,"rce_asr_captioning_improvements":false,"rce_find_replace":true,"render_both_to_do_lists":false,"scheduled_feedback_releases":true,"speedgrader_studio_media_capture":true,"student_access_token_management":true,"validate_call_to_action":false,"block_content_editor_ai_alt_text":true,"ux_list_concluded_courses_in_bp":true,"account_level_mastery_scales":false,"ams_root_account_integration":false,"ams_advanced_content_organization":false,"api_rate_limits":true,"buttons_and_icons_root_account":false,"canvas_apps_sub_account_access":true,"course_pace_allow_bulk_pace_assign":false,"course_pace_download_document":false,"course_pace_draft_state":false,"course_pace_pacing_status_labels":false,"course_pace_pacing_with_mastery_paths":false,"course_pace_time_selection":false,"course_pace_weighted_assignments":false,"course_paces_skip_selected_days":false,"create_course_subaccount_picker":true,"disable_iframe_sandbox_file_show":false,"extended_submission_state":false,"file_verifiers_for_quiz_links":true,"instui_nav":false,"login_registration_ui_identity":false,"lti_apps_page_ai_translation":true,"lti_apps_page_instructors":false,"lti_asset_processor":true,"lti_asset_processor_discussions":false,"lti_link_to_apps_from_developer_keys":true,"lti_registrations_discover_page":true,"lti_registrations_next":true,"lti_registrations_page":true,"lti_registrations_usage_data":true,"lti_registrations_usage_data_dev":false,"lti_registrations_usage_data_low_usage":false,"lti_registrations_usage_tab":false,"lti_toggle_placements":true,"mobile_offline_mode":false,"modules_requirements_allow_percentage":false,"non_scoring_rubrics":true,"open_tools_in_new_tab":true,"pendo_extended":false,"product_tours":false,"rce_lite_enabled_speedgrader_comments":true,"rce_transform_loaded_content":false,"react_discussions_post":true,"restrict_student_access":false,"rubric_criterion_range":true,"scheduled_page_publication":true,"send_usage_metrics":true,"top_navigation_placement":false,"youtube_migration":false,"widget_dashboard":false,"account_survey_notifications":true,"embedded_release_notes":true,"canvas_k6_theme":null,"lti_asset_processor_course":null,"new_math_equation_handling":true},"PENDO_APP_ID":"1ca366f1-739e-4565-52d2-9e6f6a8d438f","current_user":{},"context_asset_string":null,"TIMEZONE":"Etc/UTC","CONTEXT_TIMEZONE":null,"LOCALES":["en"],"BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","rce_auto_save_max_age_ms":86400000,"K5_USER":false,"USE_CLASSIC_FONT":false,"K5_HOMEROOM_COURSE":false,"K5_SUBJECT_COURSE":false,"LOCALE_TRANSLATION_FILE":"https://du11hjcvx0uqb.cloudfront.net/dist/javascripts/translations/en-8fd625a536.json","ACCOUNT_ID":"1","horizon_course":false,"HORIZON_ACCOUNT":null,"notices":[],"csp":"frame-src 'self' *.ada.support *.amazonaws.com *.amazoncognito.com *.aws-lms-integration.lms-cmp.integration.skillbuilder.aws *.aws-salesforce-integration-iad-prod-academy.insproserv.net *.awsacademy.labs.awsevents.com *.awsacademy.quiz-lti-pdx-prod.instructure.com *.canvas-analytics-iad-prod.inscloudgate.net *.canvaslms.com *.cloudfront.net *.cluster339.canvas-user-content.com *.custom-educator-dashboard-pdx-prod.insproserv.net *.emergingtalent.contentcontroller.com *.global.prod.integration.skillbuilder.aws *.google.com *.googleapis.com *.gstatic.com *.heapanalytics.com *.iad.portfolio.instructure.com *.inscloudgate.net *.inst-fs-pdx-prod.inscloudgate.net *.instructure.com *.instructuremedia.com *.integration.lucid.app *.labs.awsevents.com *.labs.vocareum.com *.live-events-lti-iad-prod.inscloudgate.net *.lucidchart.com *.pendo.io *.portal.inshosteddata.com *.scone-prod.us-west-2.inscloudgate.net *.sentry.insops.net *.skillbuilder.aws *.storage.googleapis.com *.vocareum.com aws-lms-integration.lms-cmp.integration.skillbuilder.aws aws-salesforce-integration-iad-prod-academy.insproserv.net awsacademy.labs.awsevents.com awsacademy.quiz-lti-pdx-prod.instructure.com canvadocs-pdx-prod.inscloudgate.net canvas-analytics-iad-prod.inscloudgate.net canvas.instructure.com canvasir.cognitiveservices.azure.com canvaslms.com custom-educator-dashboard-pdx-prod.insproserv.net emergingtalent.contentcontroller.com global.prod.integration.skillbuilder.aws heapanalytics.com iad.portfolio.instructure.com insops.net inst-fs-pdx-prod.inscloudgate.net integration.lucid.app labs.vocareum.com live-events-lti-iad-prod.inscloudgate.net portal.inshosteddata.com scone-prod.us-west-2.inscloudgate.net sso.canvaslms.com blob:; script-src 'self' 'unsafe-eval' 'unsafe-inline' *.ada.support *.amazonaws.com *.amazoncognito.com *.canvaslms.com *.cloudfront.net *.cluster339.canvas-user-content.com *.google.com *.googleapis.com *.gstatic.com *.heapanalytics.com *.inscloudgate.net *.inst-fs-pdx-prod.inscloudgate.net *.instructure.com *.instructuremedia.com *.labs.awsevents.com *.lucidchart.com *.pendo.io *.sentry.insops.net *.skillbuilder.aws *.storage.googleapis.com *.vocareum.com canvadocs-pdx-prod.inscloudgate.net canvasir.cognitiveservices.azure.com canvaslms.com heapanalytics.com insops.net inst-fs-pdx-prod.inscloudgate.net; object-src 'self' *.ada.support *.amazonaws.com *.amazoncognito.com *.canvaslms.com *.cloudfront.net *.cluster339.canvas-user-content.com *.google.com *.googleapis.com *.gstatic.com *.heapanalytics.com *.inscloudgate.net *.inst-fs-pdx-prod.inscloudgate.net *.instructure.com *.instructuremedia.com *.labs.awsevents.com *.lucidchart.com *.pendo.io *.sentry.insops.net *.skillbuilder.aws *.storage.googleapis.com *.vocareum.com canvadocs-pdx-prod.inscloudgate.net canvasir.cognitiveservices.azure.com canvaslms.com heapanalytics.com insops.net inst-fs-pdx-prod.inscloudgate.net; ","active_context_tab":null};
+    BRANDABLE_CSS_HANDLEBARS_INDEX = [["new_styles_normal_contrast","new_styles_high_contrast","new_styles_normal_contrast_rtl","new_styles_high_contrast_rtl","new_styles_normal_contrast_dyslexic","new_styles_high_contrast_dyslexic","new_styles_normal_contrast_dyslexic_rtl","new_styles_high_contrast_dyslexic_rtl"],{"10":["908ffbc673",0,"d5c9044c6e",2,0,0,2,2],"15":["c8540c43a4",0,"0a2196be1d",2,0,0,2,2],"19":["df5777ed9c"],"61":["d5c4afc14e","ebb835cdef","384361a056","2e0ba247d5",0,1,2,3],"67":["db2aeb63d1",0,"32c90f1518",2,0,0,2,2],"71":["b848cc547a","83ae671549","d1c7bac7c6","0888a4a9e7",0,1,2,3],"06":["ba28819778",0,"96b99aafe5",2,0,0,2,2],"f0":["b349f31f5e",0,0,0,0,0,0,0],"c8":["aeda914f8b","c49cb30680","817080456d","ea2c01509e",0,1,2,3],"1e":["834e660fc6","35fd7c2fa0","99d344b95a","3de47096dc",0,1,2,3],"0c":["4dae5befd2",0,"c18876be89",2,0,0,2,2],"da":["b5a7f9cd8f","6e65f5abf7","773390ae11","6481b459be",0,1,2,3],"1d":["2128789890",0,"e568085637",2,0,0,2,2],"08":["64bff5a97d"],"e2":["79d37f210d"],"9f":["d39b291ba6",0,0,0,0,0,0,0],"2b":["20b6964699","b11dc54da6","62fe3ea30b","6bb4a7ae9e",0,1,2,3],"2c":["8a926fc28b",0,0,0,0,0,0,0],"c2":["6f2721ae01"],"9c":["c31821c764",0,"1693aba1da",2,0,0,2,2],"c5":["b5d5bef953","09b4a0b487","27a133737e","2098769aea",0,1,2,3],"f2":["51574f9b13"]}]
+      REMOTES = {};
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/ec89532a9c377eb15ef41118ca61fb49/variables-6ceabaf6137deaa1b310c07895491bdd.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/Etc/UTC-c12d8c7f21.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/react-entry-be1bde4765d8e661.js" crossorigin="anonymous" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/main-entry-54c6efc1003eca63.js" crossorigin="anonymous" defer="defer"></script>
+<script>
+//<![CDATA[
+(window.bundles || (window.bundles = [])).push('login');
+(window.bundles || (window.bundles = [])).push('terms_of_service_modal');
+//]]>
 </script>
-
-
-   <style nonce="Y7PsqprL6cJiwQlvPOX9gg">
-      #login-bg-image-id {
-         background-image: url('https://ok3static2.oktacdn.com/fs/bco/7/fs01wh99803vnHosK1d8')
-      }
-
-      #okta-sign-in.auth-container.main-container {
-         margin-right: 128px;
-      }
-
-      #okta-sign-in.auth-container .okta-sign-in-header {
-         background-color: #9e1b34;
-      }
-   </style>
-
+  
 </head>
 
-<body>
-   <div id="login-bg-image-id" class="login-bg-image tb--background"></div>
-   <div id="okta-login-container"></div>
+<body class="full-width ic-Login-Body no-headers  primary-nav-expanded full-width responsive_student_grades_page">
 
-   <!--
-        "OktaUtil" defines a global OktaUtil object
-        that contains methods used to complete the Okta login flow.
-     -->
-   
-<div id="okta-sign-in" class="auth-container main-container unsupported-message-container" style="display:none">
-    <div id="unsupported-cookie" class="unsupported-message" style="display:none">
-        <h2 class="o-form-head">Cookies are required</h2>
-        <p>Cookies are disabled on your browser. Please enable Cookies and refresh this page.</p>
-        <a class="button button-primary" target="_blank" href=".">
-            Refresh
-        </a>
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
     </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+<div id="flash_message_holder"></div>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app ">
+  
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+    <div id="main" class="ic-Layout-columns">
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+          
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+
+
+
+<div class="ic-Login">
+  <div class="ic-Login__container">
+    <div class="ic-Login__content">
+      <div class="ic-Login__innerContent">
+
+        <div class="ic-Login-header">
+          
+<div class="ic-Login-header__logo">
+    <img alt="AWS Academy " src="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/9/AWS-Academy_logo_RGB_REV.png" />
 </div>
-<div id="inactive-tab-main-div" style="display:none;">
-    <div class="inactive-tab-container">
-        <div class="inactive-tab-header">
-            <img src="https://ok3static2.oktacdn.com/fs/bco/1/fs01vvpl8z1nXDxJ21d8" alt="BYU–Hawaii" class="report-org-logo">
-            <div class="divider"></div>
+
+          <div class="ic-Login-header__links">
+            
+
+
+
+          </div>
         </div>
-        <div class="inactive-tab-content">
-            <h2 class="inactive-tab-content-title">The page has timed out</h2>
-            <p class="inactive-tab-details">If this page does not reload automatically, please refresh your browser.</p>
-        </div>
-    </div>
-</div>
 
-<script type="text/javascript" nonce="Y7PsqprL6cJiwQlvPOX9gg">
-  var signInSuccessCallBackFunction;
-  var oktaData = {"redirectUri":"\x2Fapp\x2Fces\x2Dbyu\x2Dhawaii_pathifycustom_1\x2Fexk1vejeoneHIQlWX1d8\x2Fsso\x2Fsaml","isMobileSso":false,"orgSyncToAccountChooserEnabled":true,"fromUri":"","isMobileClientLogin":false,"requestContext":{"app":{"type":"object","value":{"name":"ces\x2Dbyu\x2Dhawaii_pathifycustom_1","label":"Pathify\x2Dcustom","id":"0oa1vejeoni7fdBhP1d8"}},"authentication":{"request":{},"protocol":{},"client":{"name":"ces\x2Dbyu\x2Dhawaii_pathifycustom_1","label":"Pathify\x2Dcustom","id":"0oa1vejeoni7fdBhP1d8"},"type":"object","value":{"request":{},"protocol":{}}},"target":{"clientId":"0oa1vejeoni7fdBhP1d8","name":"ces\x2Dbyu\x2Dhawaii_pathifycustom_1","label":"Pathify\x2Dcustom"}},"countryIso":"US","inactiveTab":{"elementId":"inactive\x2Dtab\x2Dmain\x2Ddiv","avoidPageRefresh":true,"enabled":true},"signIn":{"logoText":"BYU\x2DHawaii\x20logo","brandName":"BYU\x2DHawaii","language":"en","consent":{"cancel":function(){window.location.href='https\x3A\x2F\x2Fsignon.byuh.edu\x2Flogin\x2Fstep\x2Dup\x2Fredirect\x3FstateToken\x3DeyJ6aXAiOiJERUYiLCJhbGlhcyI6ImVuY3J5cHRpb25rZXkiLCJ2ZXIiOiIxIiwib2lkIjoiMDBvMXBhcTVtM21zSEZ0d2cxZDgiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..L5nOzZBJMKuUz1K2.vPvBs3NX9\x2DN4A6gnW3i3wv0dIlGNk5mLDr314WvMoG1HdS9SZAnrusKlEUKKrnnpLSUsJuN42FEM6kY2paLjiwDKL7sxt3makqhIVZr2TIkR9uQz24M\x2D3Utp9an9JtgjqazF9CLM0gGRRfQc_dVmWLmK2OrsYygAl\x2DHTbzMIHddjpxIGBCiR95c\x2DQqszlSZjH1soQoFQHNOCCjbkfvpVfDLrKvjOA_En86e0oDIis_AWBxoa9GQFWcWZapfuyQe6diMTwuL_X2KHvDrfwEx4yuLaeX3XzQqOM4MA6DfouZkYMeNWr8qYMJ_5oHuXrxrQCPnUeRY2yPZmI65XKeJA\x2D\x2DXsKEc7\x2DWjabk38KYdq9kiKb0bVXB9KCk6RGkTOkHmsSYrviSKizGiLzQR4Hn40i2aqBnRsU4hi7_Q0VZf7zCXkFanqZPE7mJpTOtRoOarObaEXpgy3O1TVGRB\x2DGGOk5fir0H2WZAU\x2DwwZ2qRAvRYMzALESlELFNEQnife3ttZkWE6d63wi\x2DyjjwRGMoHv8uAUwHe_cqn3ydCkt25\x2DS_RPA51MmJQBAcPAv7HmNfy85JDhkdrNEKTGK0mjmr\x2DK4ZeuO7l\x2DaxbeOpo6j3x2hOBRHJIBRTPQ7ofwCipwvnAj65kzQO09NXMPkp_iJF6dAA0a3UBTGxRsZQZnswkzeBjQub7E2D8CPP\x2DRY7Ib2GiUVyHx3TQ\x2Daxxl10WlsOZcvFRYHou9ffjYHqgHSBtdHX6g0g5aZLa1QvaBHSjE_xXB9b2sYypC\x2Dmaedi89CfhtGlJxvVEnJLC6jqBI0wOqwrcZlLAbzSLMpK\x2DmgxGundQzW38vaD9QMUIPqpF8VqEEme3Cjud19UnFMdKhvl\x2D37Xn\x2DWqohEls9GOG72jciSivPNSbvQgbnLtSnTfj85iVt1Cc9TW3bNwF_yuL1fKLplmF04JUh2sOnTY57Ona9UbNFRnJ5w1snAG2GMT_L1bYa444Wcjqiebr5k\x2Dzk6bVsH7Lt7Hakrdo2rSfSWiMDcfj6evAncCTX8ZKDg6W2AhPXA0FUBsfC4R0SGJRWl2UzA6g5BSSZZ7XYN1iH3QlPIW8uBQDe_s01i9wRb4cwRfChA3lgEk9jjivfLGAgjaxp12GjqaBO1tubd971GGJrYi6_w3KgGHalny_oUgs6lbCB8QQGCprbEJXL9qnAFpsr4u2KyYmFZ7jTKVJnGiEbxZH5uAN0n4eOTZOxglnoxbnxBGZljAZxRPyEN7XEACtX_MEGdXGHrrFj\x2DnywXide8OnpoXMBFbugqwQhvsMPf0IZzCZCW332ve_POhpiEwkshynMACnf3LfuvJzJxp5xN6LWehl3dA8dMptuR5jiBvXmv\x2DPIANKzSURY1EaME_hyWw14_bHDtw\x2DjmimA8MICSYbo4vVDpIOBxINKQfj6BN3XSRjN8pAXTtlbjnBYZcnDIe\x2D\x2DCs44whdcVbr6qJFuMjdOvQ5gigcfpYcHdVWYTO8EoAStYsTg4on6sxxev2Zsk3ork\x2DlRUtHviWyVhM9757wVuOZ2KV1Fmp8fttRGW7EydWE8NrlJi554IAGFKRCGetriNArp7cgMYL5Vwue9Fh7i3TZN9QmUz8zhXfEnzZmtz4_zwLHZFTXyrVCR4F_zegzdLPchu5UUYDCQ3fLhPILLsZRJ01NqfQRjXGljQkfgS4_q3C7wAu4enQQFXOOgXPANJc0oWSIkxDcAF8wwzsdUwnG6hwcu6XLoh0Cog7MjNPWhQaO1O3ZOET3byocLl59Yw6Q4GnP1rwTKITBdhotbyMKPGriPM3QT_2JBBpE3LpMk2ZxgM3upuxokzSGc6sDcQlliHpFewEllukQ\x2D9WqnOMCSA8WgnWYpfhGAialbczByaJktLpFxE4Lotj4vUJYveRS72jN72XgP1stwflE0g73Q8Rscmsdk5Ca1FYD_YMyhkzoBf3OT_1xSE8\x2DMhdnfJ\x2DFMB\x2DQxOBiJ1LEpH9qP_n9eNa4dxtp7VgiwnLZyoVTRZ5wyrDvLQMGWTVMAgZOhi\x2Djik1VtQRSJQeLUkOnGlA5zZqCK7EWOfZNLIJhW8gBPe5vxopV1OfoXziLdjWFsldKkmARFeRZtJBlaBQ\x2DhcQBxSbSLIk\x2DqpWTpdBpnEtlNSO6nRsewx8OkEBSvOXidpY1bRlpUACa1belQUbYK_MOMMeARk4Z42LkkNa84Kdy9bNZ8xbfym67aUhDRxPPdg3ffULfOdj35l97dr16RjIERWKkWlCEIQQgBNBrgemix6RB6EDPH4dldu9a2N3NKw\x2DKkaeoe3VHCfSNska6c6toojQg4MM5JqZipyPlxaPvXoyf9gg7g7TS7jpQAM_hmeirbRvUSviqDL0YN9bIoD487u9r09RDLbA25qVJDDE12subUWG9l5BxwuL1o4L69JgTYCFkH8xB5r16m0BP1_IXKUKjiupP9TEczgiKrhICBpG_k9\x2DtVMGgBUBSyW\x2DjRH5r\x2DR\x2DctU3goQUF5I1ArST8A7WRTZzGzWyP\x2DBZs2q\x2DLJzh3vBFp4W9Wwwwcv4JNJudbywM\x2DBUPpC0srOhzo9aXkIiFgMeu3YRAvF4pSC4xrRC9fB0cYfVF5OBwjmu7ZoP2iMmINkhgj0onfN8QMXe9MAmbfWJ1jRzn_03wb5LfYf2qL2\x2DpUOdFeaBlbfaGlogB\x2DwcWDOtNR65_rxUWFDQ8EsUzJS4zfCK\x2Dhfli4oUa0ov_grK4izImxTC_yaEh5PzVAHXucVYedyBqWtPeaBIX9ZXG\x2D1MtdscMua1DCN\x2DiFMVGkSBbwVn1e\x2DCYeQhwX2e1zQz12kFZt4o1UbT0OAgpzjWrV1Bug_mH\x2DZUGu47xjeGN3PoIR9wXTfa4P2PU1Ht90M_q9QyGtFTPVWTUP6SFR6lVhVadjkIv_rSLMh2VzH3TTw6jaHEKhz\x2DjaFNh_9LVSyNoi2YWe7N8hLNaJjif9GLFE86ICV3l8DDyomSnHYSo\x2D7Uwv9o0oaNPMX3jE9ckLTG7LWEZHHEfkeKNDtksawH\x2DSh1BO6AZP5MFZHvmxvDXOtzxK0ICpUwtLhj5Rd_srqoP0CasA41EBJEao5SsryuAXfS24Gf5MyflCHaJQQJCacoUjWfY_8DUsYaOkyi7Q02WhB\x2DJDmuR_WI_5TjmWqp1oAPXwW7qGgxuY2VCssRcOM9pDrJL0J\x2DR4F\x2D\x2DSwmShbylJMmrdWe3XFZJIoIruliTvLujyFCEbbTjZlN43Lqz7DJ2uIH0jrpofnoMbZn8H1wnBNEpC6lqCVlDVkuvXRgW5D1MT3EhIwuWd9r6Ib41Q0P5k3VRvH\x2DGzN59om0x3gV4jcQ7jt23hf4P_FR\x2Dgxwk26oaHA6aGu8fOvJYofrjjY_mYWkOUnS7pBDGiJ5epZL3rWizrTNmBEwhQOjSRAr3apGK9U1gnbJd\x2DFa6TqJyvWaLw_BWQ9V7u4LfakqwYPRdJOeB18RbXP2Ilgp_Li2OqQ7DX1kU_IEQtYB2g9Q5uYN8AQMm6ckcnozK\x2DpI4uNYnIOiBkge76WhXxJz1lkt1XeX\x2D1cEJOyDlQ2ShE40JFeY0qdf4qKmTFuhkRv2f0DaWrRX4JQWR6S24AipZqBL7beLFOSBtgormsccFOzIBcfgFpla1dKfXjs85LU9CI1DAErtWe31s9ILX4emV2udpiFzkWEpFdix6rcMYx9Z6vZy0VbWnuI\x2DjvjvRuzg4E22jVuAzz3Ozip87sle5n7rjuil3ImDbbVwZVMB096qn8bi6ZpyN4vHFz9c9GzvSipCyq3zQWkU\x2Dl0OTJ971ycgSBeJ1V6uZhk8CyWlHs3dbLS_m5JdRuTS\x2D8anKYGVkLclBaBU4SdhHPf5tufAlfmK1XNM0F3mt98vRmPteSdlGLwn02ysokMdj_fUODNv3Qzs6fP35CiMrt3uTFo7Moz74GqKSA2sLxlMInHH\x2D1os0Yx42PdirxrIXLgkkV8eB8oEFt0Bd8owbx0aiAFOFfvzB9FGksFshZT34rDtU31qGJpP\x2DNKDk4rQPJwfPwapZwocD1lF_gCld7Zib8osoZYol9GmoK3ZrHO1W4WN1mBoIDxQab08MzSm4Bw0u\x2D3M7P8m9XAYTPlvP6FpYo_m2ywuGrLVlETjwhHGswqkUE\x2DqMR2lSaLSmyGajnpECx6V9ojsN_IYz6Nl439gfVt4xQN3gePBKoH3R7qRbcuclS09wqM\x2DtuYFfgTERxcGTa2hzfChr4GUYZREZO0qrhJwQt5jipNGDllQpyiO7KbQlnsmLfxh6YlS_hz_248Gx4FRq5kn2mnBlECJBJkJsEnRuZ0FdCXknjEQrm4Pt3sKht1Ln49Z4Pv_8HES2SBKZSqCFXnHjFoArTKidod07AVXTJgnZVDGeQ5Qrq8Q0jSJ\x2D4iyS0xF6xb80qDjAy3M8COMeDYOEcLHvcde7mD58O8LYBpiQ9fWcLvdOPg7NrPUkpbPSrXQnSiui3FMwWpkj9aTXAQEp4crGCyU2RK6xp7NeCadgoS4YfqdLKtC_M8e8zT4EUoIewV_E0keelW5loccq065IBKB4_QGxkKZ22dzihcS6Ouj9veEfFjtd\x2Dab8yGdENteUwq\x2DWP2XFmGWoxt3MXR3ZwllGRx68QrDh7l04QmgX3UTs9cbSbGX3e59wsMJxGKuo_a6m94LuuYGIJqr4ndkcjAQx3GRFVbq0jU8NMn5fqgcf4hB\x2DEDrSNCMpdH02lcHVDVHOW3ieDV7QTksZGssgdhhsHaN4AfaVNQ8YRajZNEAt8lBAqxsk5F\x2Dfx8VUYFJEB_zKJJd5uAOO3Qd9tcA5UFvbE7LFhBoJfaDlVdw9sAbY\x2DYi3IbXJnUEEOJm0gjhnQlHGYj1yF3ywoVAMo7lcZj\x2Dlf4_wRau9QQ5aK8UvLQBZfVA4G0YIatYvZuC3BNWPYwz9YhzDkprhBOTYcAQ0C9n325Yy6oKFAgxRdB_XQ2182fa\x2Dfal_yzF3eXlP9VOQRH6hwpL4PjQR2bqWUqqXC6Xq6YmbPp3gYYjFUmMm1bXyUuCvBsWHVCAaFQHlAY\x2Du6CPfqOF3rGCnLzXD\x2Dz5CosGWwVOnXCJvT9WkhQCFoK0Cgsl6SXd8YvQd_su3YZt6S6zW5gXwqcU1kq9P4Cp75QJsJ5dh_JoMnY1\x2D333dEKZaaDceKC7Tg._3co_gUsLX2zGFHk0_SYwA';}},"i18n":{"en":{"primaryauth.username.tooltip":"netid\x20or\x20netid\x40byuh.edu","account.unlock.email.or.username.placeholder":"Email\x20or\x20Username","forgotpassword":"Forgot\x20password\x3F","mfa.challenge.password.placeholder":"Password","help":"Help","password.forgot.email.or.username.tooltip":"Email\x20or\x20Username","needhelp":"Need\x20help\x20signing\x20in\x3F","primaryauth.username.placeholder":"Username","password.forgot.email.or.username.placeholder":"Email\x20or\x20Username","account.unlock.email.or.username.tooltip":"Email\x20or\x20Username","unlockaccount":"Unlock\x20account\x3F","primaryauth.password.placeholder":"Password","primaryauth.title":"Sign\x20In"}},"features":{"isBotProtectionEnabled":false,"hideSignOutLinkInMFA":false,"emailRecovery":false,"deviceFingerprinting":true,"showIdentifier":true,"consent":true,"useDeviceFingerprintForSecurityImage":true,"customExpiredPassword":true,"router":true,"showPasswordToggleOnSignInPage":true,"securityImage":true,"autoPush":true,"smsRecovery":false,"idpDiscovery":false,"selfServiceUnlock":false,"webauthn":true,"passwordlessAuth":true,"showPasswordRequirementsAsHtmlList":true,"registration":false,"rememberMe":true,"callRecovery":false,"multiOptionalFactorEnroll":true},"baseUrl":"https\x3A\x2F\x2Fsignon.byuh.edu","helpSupportNumber":"\x28808\x29\x20675\x2D3921","assets":{"baseUrl":"https\x3A\x2F\x2Fok3static2.oktacdn.com\x2Fassets\x2Fjs\x2Fsdk\x2Fokta\x2Dsignin\x2Dwidget\x2F7.40.4"},"brandColors":{"primaryColorContrast":"\x23ffffff","primaryColor":"\x23ba0c2f","secondaryColorContrast":"\x23000000","secondaryColor":"\x23ebebed"},"customButtons":[],"idpDiscovery":{"requestContext":""},"logo":"https\x3A\x2F\x2Fok3static2.oktacdn.com\x2Ffs\x2Fbco\x2F1\x2Ffs01vvpl8z1nXDxJ21d8","stateToken":"eyJ6aXAiOiJERUYiLCJhbGlhcyI6ImVuY3J5cHRpb25rZXkiLCJ2ZXIiOiIxIiwib2lkIjoiMDBvMXBhcTVtM21zSEZ0d2cxZDgiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiZGlyIn0..L5nOzZBJMKuUz1K2.vPvBs3NX9\x2DN4A6gnW3i3wv0dIlGNk5mLDr314WvMoG1HdS9SZAnrusKlEUKKrnnpLSUsJuN42FEM6kY2paLjiwDKL7sxt3makqhIVZr2TIkR9uQz24M\x2D3Utp9an9JtgjqazF9CLM0gGRRfQc_dVmWLmK2OrsYygAl\x2DHTbzMIHddjpxIGBCiR95c\x2DQqszlSZjH1soQoFQHNOCCjbkfvpVfDLrKvjOA_En86e0oDIis_AWBxoa9GQFWcWZapfuyQe6diMTwuL_X2KHvDrfwEx4yuLaeX3XzQqOM4MA6DfouZkYMeNWr8qYMJ_5oHuXrxrQCPnUeRY2yPZmI65XKeJA\x2D\x2DXsKEc7\x2DWjabk38KYdq9kiKb0bVXB9KCk6RGkTOkHmsSYrviSKizGiLzQR4Hn40i2aqBnRsU4hi7_Q0VZf7zCXkFanqZPE7mJpTOtRoOarObaEXpgy3O1TVGRB\x2DGGOk5fir0H2WZAU\x2DwwZ2qRAvRYMzALESlELFNEQnife3ttZkWE6d63wi\x2DyjjwRGMoHv8uAUwHe_cqn3ydCkt25\x2DS_RPA51MmJQBAcPAv7HmNfy85JDhkdrNEKTGK0mjmr\x2DK4ZeuO7l\x2DaxbeOpo6j3x2hOBRHJIBRTPQ7ofwCipwvnAj65kzQO09NXMPkp_iJF6dAA0a3UBTGxRsZQZnswkzeBjQub7E2D8CPP\x2DRY7Ib2GiUVyHx3TQ\x2Daxxl10WlsOZcvFRYHou9ffjYHqgHSBtdHX6g0g5aZLa1QvaBHSjE_xXB9b2sYypC\x2Dmaedi89CfhtGlJxvVEnJLC6jqBI0wOqwrcZlLAbzSLMpK\x2DmgxGundQzW38vaD9QMUIPqpF8VqEEme3Cjud19UnFMdKhvl\x2D37Xn\x2DWqohEls9GOG72jciSivPNSbvQgbnLtSnTfj85iVt1Cc9TW3bNwF_yuL1fKLplmF04JUh2sOnTY57Ona9UbNFRnJ5w1snAG2GMT_L1bYa444Wcjqiebr5k\x2Dzk6bVsH7Lt7Hakrdo2rSfSWiMDcfj6evAncCTX8ZKDg6W2AhPXA0FUBsfC4R0SGJRWl2UzA6g5BSSZZ7XYN1iH3QlPIW8uBQDe_s01i9wRb4cwRfChA3lgEk9jjivfLGAgjaxp12GjqaBO1tubd971GGJrYi6_w3KgGHalny_oUgs6lbCB8QQGCprbEJXL9qnAFpsr4u2KyYmFZ7jTKVJnGiEbxZH5uAN0n4eOTZOxglnoxbnxBGZljAZxRPyEN7XEACtX_MEGdXGHrrFj\x2DnywXide8OnpoXMBFbugqwQhvsMPf0IZzCZCW332ve_POhpiEwkshynMACnf3LfuvJzJxp5xN6LWehl3dA8dMptuR5jiBvXmv\x2DPIANKzSURY1EaME_hyWw14_bHDtw\x2DjmimA8MICSYbo4vVDpIOBxINKQfj6BN3XSRjN8pAXTtlbjnBYZcnDIe\x2D\x2DCs44whdcVbr6qJFuMjdOvQ5gigcfpYcHdVWYTO8EoAStYsTg4on6sxxev2Zsk3ork\x2DlRUtHviWyVhM9757wVuOZ2KV1Fmp8fttRGW7EydWE8NrlJi554IAGFKRCGetriNArp7cgMYL5Vwue9Fh7i3TZN9QmUz8zhXfEnzZmtz4_zwLHZFTXyrVCR4F_zegzdLPchu5UUYDCQ3fLhPILLsZRJ01NqfQRjXGljQkfgS4_q3C7wAu4enQQFXOOgXPANJc0oWSIkxDcAF8wwzsdUwnG6hwcu6XLoh0Cog7MjNPWhQaO1O3ZOET3byocLl59Yw6Q4GnP1rwTKITBdhotbyMKPGriPM3QT_2JBBpE3LpMk2ZxgM3upuxokzSGc6sDcQlliHpFewEllukQ\x2D9WqnOMCSA8WgnWYpfhGAialbczByaJktLpFxE4Lotj4vUJYveRS72jN72XgP1stwflE0g73Q8Rscmsdk5Ca1FYD_YMyhkzoBf3OT_1xSE8\x2DMhdnfJ\x2DFMB\x2DQxOBiJ1LEpH9qP_n9eNa4dxtp7VgiwnLZyoVTRZ5wyrDvLQMGWTVMAgZOhi\x2Djik1VtQRSJQeLUkOnGlA5zZqCK7EWOfZNLIJhW8gBPe5vxopV1OfoXziLdjWFsldKkmARFeRZtJBlaBQ\x2DhcQBxSbSLIk\x2DqpWTpdBpnEtlNSO6nRsewx8OkEBSvOXidpY1bRlpUACa1belQUbYK_MOMMeARk4Z42LkkNa84Kdy9bNZ8xbfym67aUhDRxPPdg3ffULfOdj35l97dr16RjIERWKkWlCEIQQgBNBrgemix6RB6EDPH4dldu9a2N3NKw\x2DKkaeoe3VHCfSNska6c6toojQg4MM5JqZipyPlxaPvXoyf9gg7g7TS7jpQAM_hmeirbRvUSviqDL0YN9bIoD487u9r09RDLbA25qVJDDE12subUWG9l5BxwuL1o4L69JgTYCFkH8xB5r16m0BP1_IXKUKjiupP9TEczgiKrhICBpG_k9\x2DtVMGgBUBSyW\x2DjRH5r\x2DR\x2DctU3goQUF5I1ArST8A7WRTZzGzWyP\x2DBZs2q\x2DLJzh3vBFp4W9Wwwwcv4JNJudbywM\x2DBUPpC0srOhzo9aXkIiFgMeu3YRAvF4pSC4xrRC9fB0cYfVF5OBwjmu7ZoP2iMmINkhgj0onfN8QMXe9MAmbfWJ1jRzn_03wb5LfYf2qL2\x2DpUOdFeaBlbfaGlogB\x2DwcWDOtNR65_rxUWFDQ8EsUzJS4zfCK\x2Dhfli4oUa0ov_grK4izImxTC_yaEh5PzVAHXucVYedyBqWtPeaBIX9ZXG\x2D1MtdscMua1DCN\x2DiFMVGkSBbwVn1e\x2DCYeQhwX2e1zQz12kFZt4o1UbT0OAgpzjWrV1Bug_mH\x2DZUGu47xjeGN3PoIR9wXTfa4P2PU1Ht90M_q9QyGtFTPVWTUP6SFR6lVhVadjkIv_rSLMh2VzH3TTw6jaHEKhz\x2DjaFNh_9LVSyNoi2YWe7N8hLNaJjif9GLFE86ICV3l8DDyomSnHYSo\x2D7Uwv9o0oaNPMX3jE9ckLTG7LWEZHHEfkeKNDtksawH\x2DSh1BO6AZP5MFZHvmxvDXOtzxK0ICpUwtLhj5Rd_srqoP0CasA41EBJEao5SsryuAXfS24Gf5MyflCHaJQQJCacoUjWfY_8DUsYaOkyi7Q02WhB\x2DJDmuR_WI_5TjmWqp1oAPXwW7qGgxuY2VCssRcOM9pDrJL0J\x2DR4F\x2D\x2DSwmShbylJMmrdWe3XFZJIoIruliTvLujyFCEbbTjZlN43Lqz7DJ2uIH0jrpofnoMbZn8H1wnBNEpC6lqCVlDVkuvXRgW5D1MT3EhIwuWd9r6Ib41Q0P5k3VRvH\x2DGzN59om0x3gV4jcQ7jt23hf4P_FR\x2Dgxwk26oaHA6aGu8fOvJYofrjjY_mYWkOUnS7pBDGiJ5epZL3rWizrTNmBEwhQOjSRAr3apGK9U1gnbJd\x2DFa6TqJyvWaLw_BWQ9V7u4LfakqwYPRdJOeB18RbXP2Ilgp_Li2OqQ7DX1kU_IEQtYB2g9Q5uYN8AQMm6ckcnozK\x2DpI4uNYnIOiBkge76WhXxJz1lkt1XeX\x2D1cEJOyDlQ2ShE40JFeY0qdf4qKmTFuhkRv2f0DaWrRX4JQWR6S24AipZqBL7beLFOSBtgormsccFOzIBcfgFpla1dKfXjs85LU9CI1DAErtWe31s9ILX4emV2udpiFzkWEpFdix6rcMYx9Z6vZy0VbWnuI\x2DjvjvRuzg4E22jVuAzz3Ozip87sle5n7rjuil3ImDbbVwZVMB096qn8bi6ZpyN4vHFz9c9GzvSipCyq3zQWkU\x2Dl0OTJ971ycgSBeJ1V6uZhk8CyWlHs3dbLS_m5JdRuTS\x2D8anKYGVkLclBaBU4SdhHPf5tufAlfmK1XNM0F3mt98vRmPteSdlGLwn02ysokMdj_fUODNv3Qzs6fP35CiMrt3uTFo7Moz74GqKSA2sLxlMInHH\x2D1os0Yx42PdirxrIXLgkkV8eB8oEFt0Bd8owbx0aiAFOFfvzB9FGksFshZT34rDtU31qGJpP\x2DNKDk4rQPJwfPwapZwocD1lF_gCld7Zib8osoZYol9GmoK3ZrHO1W4WN1mBoIDxQab08MzSm4Bw0u\x2D3M7P8m9XAYTPlvP6FpYo_m2ywuGrLVlETjwhHGswqkUE\x2DqMR2lSaLSmyGajnpECx6V9ojsN_IYz6Nl439gfVt4xQN3gePBKoH3R7qRbcuclS09wqM\x2DtuYFfgTERxcGTa2hzfChr4GUYZREZO0qrhJwQt5jipNGDllQpyiO7KbQlnsmLfxh6YlS_hz_248Gx4FRq5kn2mnBlECJBJkJsEnRuZ0FdCXknjEQrm4Pt3sKht1Ln49Z4Pv_8HES2SBKZSqCFXnHjFoArTKidod07AVXTJgnZVDGeQ5Qrq8Q0jSJ\x2D4iyS0xF6xb80qDjAy3M8COMeDYOEcLHvcde7mD58O8LYBpiQ9fWcLvdOPg7NrPUkpbPSrXQnSiui3FMwWpkj9aTXAQEp4crGCyU2RK6xp7NeCadgoS4YfqdLKtC_M8e8zT4EUoIewV_E0keelW5loccq065IBKB4_QGxkKZ22dzihcS6Ouj9veEfFjtd\x2Dab8yGdENteUwq\x2DWP2XFmGWoxt3MXR3ZwllGRx68QrDh7l04QmgX3UTs9cbSbGX3e59wsMJxGKuo_a6m94LuuYGIJqr4ndkcjAQx3GRFVbq0jU8NMn5fqgcf4hB\x2DEDrSNCMpdH02lcHVDVHOW3ieDV7QTksZGssgdhhsHaN4AfaVNQ8YRajZNEAt8lBAqxsk5F\x2Dfx8VUYFJEB_zKJJd5uAOO3Qd9tcA5UFvbE7LFhBoJfaDlVdw9sAbY\x2DYi3IbXJnUEEOJm0gjhnQlHGYj1yF3ywoVAMo7lcZj\x2Dlf4_wRau9QQ5aK8UvLQBZfVA4G0YIatYvZuC3BNWPYwz9YhzDkprhBOTYcAQ0C9n325Yy6oKFAgxRdB_XQ2182fa\x2Dfal_yzF3eXlP9VOQRH6hwpL4PjQR2bqWUqqXC6Xq6YmbPp3gYYjFUmMm1bXyUuCvBsWHVCAaFQHlAY\x2Du6CPfqOF3rGCnLzXD\x2Dz5CosGWwVOnXCJvT9WkhQCFoK0Cgsl6SXd8YvQd_su3YZt6S6zW5gXwqcU1kq9P4Cp75QJsJ5dh_JoMnY1\x2D333dEKZaaDceKC7Tg._3co_gUsLX2zGFHk0_SYwA","helpLinks":{"help":"","forgotPassword":"","unlock":"","custom":[]},"piv":{}},"accountChooserDiscoveryUrl":"https\x3A\x2F\x2Flogin.okta.com\x2Fdiscovery\x2Fiframe.html"};
-
-  var runLoginPage = function(fn) {
-    var mainScript = document.createElement('script');
-    mainScript.src = "https://ok3static2.oktacdn.com/assets/js/mvc/loginpage/initLoginPage.pack.f45aba2fcd86049fdc0a4446a0b4aa60.js";
-    mainScript.integrity = "sha384-Ti1AVzmYlM/NMC9etUiz87VUWhwg+Bo9yxzyhSC6H+BcvWDdE/RfZIEFxIsvkfcf";
-    mainScript.crossOrigin = "anonymous";
-    document.getElementsByTagName('head')[0].appendChild(mainScript);
-    fn && mainScript.addEventListener('load', function () { setTimeout(fn, 1) });
-  };
-
-  var OktaUtil = {
-    _addClass: function(el, className) {
-      if(el) {
-        var elementClasses = el.className.split(" ");
-        if (elementClasses.indexOf(className) == -1) {
-          el.className += " " + className;
-        }
-      }
-    },
-
-    _removeElement: function(el) {
-      if(el) {
-        el.parentNode.removeChild(el);
-      }
-    },
-
-    _hideElement: function(el) {
-      if(el) {
-        el.style.display = 'none';
-      }
-    },
-
-    _isDocumentVisible: function() {
-      return document.visibilityState === 'visible';
-    },
-
-    addLoginContainerClass: function () {
-      this._addClass(document.getElementById('okta-login-container'), 'login-container');
-    },
-
-    showUnsupportedCookieWarning: function () {
-      document.getElementById('okta-sign-in').removeAttribute('style');
-      document.getElementById('unsupported-cookie').removeAttribute('style');
-    },
-
-    removeUnsupportedCookieWarning: function () {
-      this._removeElement(document.getElementById('okta-sign-in'));
-    },
-
-    hideOktaLoginContainer: function () {
-      this._hideElement(document.getElementById('okta-login-container'));
-    },
-
-    isChromeOs:  function () {
-      return /\bCrOS\b/.test(navigator.userAgent);
-    },
-
-    addChromeOSScript: function() {
-      var chromeOSScript = document.createElement('script');
-      chromeOSScript.src = "/js/google/users-1.0.js";
-      document.getElementsByTagName('head')[0].appendChild(chromeOSScript);
-    },
-
-    getSignInWidgetConfig: function () {
-        if (oktaData.inactiveTab && oktaData.inactiveTab.enabled && !this._isDocumentVisible() && !oktaData.inactiveTab.avoidPageRefresh) {
-            // Show a loading state and wait for the visibility event
-            this.hideOktaLoginContainer();
-            // remove stateToken so SIW does not attempt a login flow
-            oktaData.signIn.stateToken = undefined;
-        }
-        return oktaData.signIn;
-    },
-
-    completeLogin: function (res) {
-      signInSuccessCallBackFunction(res);
-    },
-
-    getRequestContext: function () {
-      return oktaData.requestContext;
-    },
-
-    setRedirectUri: function (uri) {
-      oktaData.redirectUri = uri;
-    },
-
-    init: function () {
-      if (!navigator.cookieEnabled) {
-        this.showUnsupportedCookieWarning();
-        this.hideOktaLoginContainer();
-      } else {
-        this.removeUnsupportedCookieWarning();
-
-        if (oktaData.inactiveTab && oktaData.inactiveTab.enabled && !this._isDocumentVisible()) {
-          try {
-            oktaData.inactiveTab.renderFnBackup = OktaSignIn.prototype.renderEl;
-          } catch (err) {
-            // no op - graceful handling OktaSignIn undefined case
-          }
-
-          // pause render sign-in widget when browser tab is inactive
-          if (!oktaData.inactiveTab.renderFnBackup) {
-            // for older SIW, renderFnBackup is undefined, fallback to full page reload
-            oktaData.inactiveTab.fallbackFullPageReload = true;
-            // Show a loading state and wait for the visibility event
-            this.hideOktaLoginContainer();
-            // remove stateToken so SIW does not attempt a login flow
-            oktaData.signIn.stateToken = undefined;
-          } else {
-            // for newer SIW, override renderEl function so SIW does not attempt a login flow
-            OktaSignIn.prototype.renderEl = function () {
-              oktaData.inactiveTab.renderArgsBackup = arguments;
-              oktaData.inactiveTab.signInInstance = this;
-              try {
-                return new Promise(function (resolve, reject) {
-                  oktaData.inactiveTab.renderResolve = resolve;
-                  oktaData.inactiveTab.renderReject = reject;
-                });
-              } catch (err) {
-                // return nothing if promise is not supported, since promise chaining won't work anyway
-              }
-            }
-          }
-
-          // event handler to resume render sign-in widget
-          document.addEventListener('visibilitychange', function checkVisibilityAndCallSuccess() {
-            if (document.visibilityState === 'visible') {
-              try {
-                document.removeEventListener('visibilitychange', checkVisibilityAndCallSuccess);
-                const inactiveTabDiv = document.getElementById(oktaData.inactiveTab.elementId);
-                inactiveTabDiv.style.display = 'none';
-
-                // resume render sign-in widget
-                if (oktaData.inactiveTab.renderFnBackup && oktaData.inactiveTab.renderArgsBackup) {
-                  OktaSignIn.prototype.renderEl = oktaData.inactiveTab.renderFnBackup;
-                  var result = oktaData.inactiveTab.signInInstance.renderEl.apply(oktaData.inactiveTab.signInInstance, oktaData.inactiveTab.renderArgsBackup);
-                  if (result && result.then) {
-                    result.then(oktaData.inactiveTab.renderResolve, oktaData.inactiveTab.renderReject);
-                  }
-                }
-              } catch (err) {
-                oktaData.inactiveTab.fallbackFullPageReload = true;
-              }
-              if (oktaData.inactiveTab.fallbackFullPageReload) {
-                location.reload();
-              }
-            }
-          });
-        }
-
-        // add class if app login banner is present
-        if (oktaData.isAppBannerVisible) {
-          this.addLoginContainerClass();
-        }
-
-        oktaData.isCustomSignIn = true;
-        oktaData.hasChromeOSFeature = this.isChromeOs();
-        if (oktaData.hasChromeOSFeature) {
-          this.addChromeOSScript();
-        }
-        runLoginPage(function () {
-          var res = OktaLogin.initLoginPage(oktaData);
-          oktaData.signIn = res.signIn;
-          signInSuccessCallBackFunction = res.signInSuccessCallbackFn;
-
-        });
-      }
-    }
-  };
-  OktaUtil.init();
-  //# sourceURL=OktaUtil.js
-</script>
-
-
-
-   <script type="text/javascript" nonce="Y7PsqprL6cJiwQlvPOX9gg">
-
-      let mfaDetector = false;
-
-      var config = OktaUtil.getSignInWidgetConfig();
-      if (!config.i18n.hasOwnProperty("en")) {
-         config.i18n.en = {};
-      }
-      config.i18n.en["oie.google_authenticator.label"] = "Google/Microsoft Authenticatior";
-      config.i18n.en["oie.enroll.webauthn.instructions"] = "You will be prompted to register a security key or biometric authenticator (Windows Hello, Touch ID, Face ID, etc.). Follow the instructions to complete set up. If you choose to use a passkey, make sure the passkey isn't trapped on this computer.";
-      config.i18n.en["oie.enroll.okta_verify.qrcode.step2"] = "Open the app and follow the instructions to add your account";
-      config.i18n.en["oie.enroll.okta_verify.qrcode.step3.updated"] = "When prompted, tap <$1>Scan a QR code</$1>, then scan the QR code below:";
-      config.i18n.en["errors.E0000004"] = "The username or password you entered is incorrect.<br><br> Did you use netid or netid@byuh.edu as your username?<br><br> If you continue to experience issues, please contact the BYU–Hawaii Help Desk: <br><br> (808) 675-3211<br> help@byuh.edu";
-
-      function mfa_ov_detector(semaphor) {
-         let mfa_ov_detect = $("div:contains('On your other device, download the Okta Verify app')");
-         if (mfa_ov_detect.length > 0) {
-            mfa_ov_detect[mfa_ov_detect.length - 1].innerHTML = "<p>You'll use the Okta Verify app on your phone/tablet as a second authentication method.</p><h4 class='stepper'> Step 1</h4><a href='#' class='btn' onclick='loadModal(\"verify-start\");' id='installhelp'>Download Okta Verify</a><h5 class='stepper' style='padding-bottom:25px; font-style: italic;'>If you already have Okta Verify skip this step</h5><h4 class='stepper'>Step 2</h4><h5 class='stepper'>Step-by-step guide for new or existing users</h5><a href='#' class='btn' onclick='loadModal(\"verify-0\");' id='installhelp'>Step-by-step Guide</a><h4 class='stepper'>Step 3</h4><h5 class='stepper'>You will scan the QR code below at the end of the step-by-step guide.</h5><a href='#' class='btn' id='showQR'>Scan Setup Code</a>"
-            $("#showQR").click(function () { showQR(); })
-            $("div[data-se='qrContainer']").hide();
-            $("div[data-se='qrContainer']").html("<p>Scan the QR code with Okta Verify:</p>" + $("div[data-se='qrContainer']").html());
-            mfaDetector = true;
-            console.log("detected");
-         } else {
-            console.log("class not found");
-            if (!semaphor && !mfaDetector) {
-               setTimeout(mfa_ov_detector, 100, true);
-            } else {
-               console.log("semaphor detected");
-            }
-         }
-
-         //add step 1
-         let ov_1 = $("div:contains('To continue, make sure you have the Okta Verify app.')");
-         if (ov_1.length > 0) {
-            ov_1[ov_1.length - 1].innerHTML = "<div><strong>Step 1</strong><p style='margin-bottom: 0px;'>Install the free Okta Verify app by clicking on the App Store button below.</p><p class='sub'>If you already have the app, you may skip this step.</p></div>";
-         } else {
-            console.log("not found 1");
-         }
-
-         let ov_2 = $("div:contains('Once Okta Verify is installed, return to this page and tap')");
-         if (ov_2.length > 0) {
-            ov_2[ov_2.length - 1].innerHTML = "<div><p>Once you have Okta Verify installed, return to this page and tap <strong>Set up Okta Verify</strong> under Step 2.</p><p><strong>Step 2</strong></p></div>";
-         } else {
-            console.log("not found 2");
-         }
-      }
-
-      function mfa_timeout_detector() {
-         if ($("div[data-se='infobox-error']").length > 0) {
-            // This page has timed out!
-            return true;
-         }
-         return false;
-      }
-
-      // Customize the theme - BYU Hawaii
-
-      config.theme = {
-         tokens: {
-            PalettePrimaryMain: '#ba0c2f',
-            TypographyColorSupport: "#ba0c2f",
-            PalettePrimaryText: '#ba0c2f',
-            PalettePrimaryHighlight: '#ba0c2f',
-            TypographyColorAction: '#ba0c2f',
-            TypographyColorDanger: '#ba0c2f',
-            PaletteDangerMain: "#ba0c2f",
-            BorderColorDangerControl: "#ba0c2f",
-            HueRed500: "#ba0c2f",
-         }
-      };
-
-
-      // Render the Okta Sign-In Widget
-      var oktaSignIn = new OktaSignIn(config);
-
-      oktaSignIn.on('afterRender', function (context) {
-         console.log("after");
-         setTimeout(mfa_ov_detector, 100);
-
-         $("div[data-se='qrContainer']").attr('id', 'qrcode');
-         $("div[data-se='qrContainer']").hide();
-
-
-         /*let lnk = $("a[data-se='help']");
-         if(lnk.length > 0){
-            lnk.parent().parent().append("<a href='https://password-reset.byuh.edu/pma' class='" + lnk.prop('class') + "'>Reset Password</a>")
-         }*/
-      });
-      /*
-      oktaSignIn.afterTransform('*', function (context) {
-         console.log(context.formName);
-         console.log(context.formBag.uischema);
-      });
-      */
-      /*
-      oktaSignIn.afterTransform('identify', function (context) {
-         var customLink = {
-            type: 'Link',
-            contentType: 'footer',
-            options: {
-               href: 'https://password-reset.byuh.edu/pma',
-               target: '_blank',
-               step: '',
-               label: 'Reset Password',
-               dataSe: 'customLink',
-            },
-         };
-         //context.formBag.uischema.elements.splice(5, 0, customLink);
-         context.formBag.uischema.elements.push(customLink);
-      });
-
-      oktaSignIn.afterTransform('challenge-authenticator', function (context) {
-         var customLink = {
-            type: 'Link',
-            contentType: 'footer',
-            options: {
-               href: 'https://password-reset.byuh.edu/pma',
-               target: '_blank',
-               step: '',
-               label: 'Reset Password',
-               dataSe: 'customLink',
-            },
-         };
-         //context.formBag.uischema.elements.splice(5, 0, customLink);
-         context.formBag.uischema.elements.push(customLink);
-      });*/
-
-      
-
-      oktaSignIn.on('ready', function (context) {
-         console.log("ready");
-      });
-
-      /*
-      oktaSignIn.on('afterError', function (context) {
-         console.log("afterError");
-      });*/
-
-      oktaSignIn.renderEl({ el: '#okta-login-container' },
-         OktaUtil.completeLogin,
-         function (error) {
-            // Logs errors that occur when configuring the widget.
-            // Remove or replace this with your own custom error handler.
-            console.log(error.message, error);
-
-         }
-      );
-
-      function loadModal(step) {
-         $("#mfa-modal").show();
-         $("#mfa-modal").load("https://assets.ceslogin.org/mfa/byuh/verify-guide.html", function () {
-            console.log(step);
-            showStep(step);
-         });
-      }
-
-      function showStep(step) {
-         $(".mfa-step").hide();
-         $("#" + step).show();
-      }
-
-      function showLastStep(step, stepA) {
-         $(".mfa-step").hide();
-
-         if (mfa_timeout_detector()) {
-            $("#" + stepA).show();
-         } else {
-            $("#" + step).show();
-         }
-      }
-
-      function jumpQR() {
-         $("div[data-se='qrContainer']").prop('id', 'qrcode');
-         $("div[data-se='qrContainer']").attr('id', 'qrcode');
-         location.href = "#qrcode";
-      }
-
-      function showQR() {
-         $("div[data-se='qrContainer']").show();
-         closeModal();
-         $("div[data-se='qrContainer']").prop('id', 'qrcode');
-         $("div[data-se='qrContainer']").attr('id', 'qrcode');
-         location.href = "#qrcode";
-         setTimeout(jumpQR, 100);
-      }
-
-      function closeModal() {
-         $("#mfa-modal").hide();
-      }
-
-
-   </script>
-
-   <!-- MFA Modal CSS -->
-
-   <style>
-      .modal {
-         display: none;
-         position: fixed;
-         z-index: 1;
-         left: 0;
-         top: 0;
-         width: 100%;
-         height: 100%;
-         overflow: auto;
-         background-color: rgba(0, 0, 0, 0.9);
-         font-family: 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif
-      }
-
-      .modal-content {
-         margin: 5% auto;
-         padding: 20px;
-         border: 1px solid #000;
-         width: 80%;
-         background-color: #fff;
-         z-index: 2;
-         height: 700px;
-         border-radius: 15px;
-      }
-
-      .mfa-step {
-         display: none;
-         padding: 0 30px;
-         text-align: center;
-
-
-         max-width: 600px;
-         max-height: 660px;
-         margin: 0 auto;
-         padding: 30px;
-      }
-
-      .mfa-head {
-         width: 100%;
-         display: flex;
-      }
-
-      img:has(> div.mfa-head) {
-         margin: 5px 0;
-      }
-
-      .btn {
-         background: #ba0c2f;
-         border-radius: 5px;
-         color: #fff;
-         font-size: 16px;
-         font-weight: 600;
-         /*letter-spacing: .8px;*/
-         line-height: 19.2px;
-         margin-top: 12px;
-         margin-bottom: 12px;
-         /*padding: 10px 25px;*/
-         text-decoration: none;
-         transition: all .2s;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-         padding-left: 18.28px;
-         padding-right: 18.28px;
-         padding-top: 13.7143px;
-         padding-bottom: 13.7143px;
-         text-align: center;
-      }
-
-      .btn:hover {
-         background-color: #a01e33;
-      }
-
-      .btn-grey {
-         background: #fff;
-         border: 2px solid #A0A0A0;
-         border-radius: 5px;
-         color: #424242;
-         font-size: 16px;
-         font-weight: 600;
-         letter-spacing: .125px;
-         margin: 12px;
-         padding: 10px 25px;
-         text-decoration: none;
-         transition: all .2s;
-      }
-
-      .btn-grey:hover {
-         background: #eee;
-      }
-
-      .btn-red {
-         background: #A3082A;
-         border-radius: 5px;
-         color: #fff;
-         font-size: 16px;
-         font-weight: 600;
-         letter-spacing: .125px;
-         margin: 12px;
-         padding: 10px 22px;
-         text-decoration: none;
-         transition: all .2s;
-      }
-
-      .btn-red:hover {
-         background: #E61744;
-      }
-
-      .btn-grid {
-         display: flex;
-         gap: 15px;
-         justify-content: center;
-         text-align: center;
-      }
-
-      .content-grid {
-         display: flex;
-         justify-content: center;
-         margin-bottom: 35px;
-         text-align: center;
-         flex-wrap: nowrap;
-      }
-
-      .content {
-         align-content: center;
-         margin: 0px auto;
-         padding: 0 35px;
-         width: 100%;
-      }
-
-      div.content>h1 {
-         font-size: 24px;
-         margin-bottom: 20px;
-         margin-top: 10px;
-         color: #272727;
-      }
-
-      div.content>p {
-         font-size: 18px;
-         text-align: center;
-         color: #272727;
-      }
-
-      div.content>img {
-         margin: 5px 0;
-         width: 320px;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-      }
-
-      img.qr {
-         max-width: 200px;
-         margin: 12px 0;
-      }
-
-      img.step {
-         width: 20%;
-         margin: 12px 0;
-      }
-
-      h4.stepper {
-         font-weight: 800;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-         margin-block: initial;
-         color: #272727;
-      }
-
-      h5.stepper {
-         font-weight: 400;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-         margin-block: initial;
-         color: #272727;
-      }
-
-      h2.stepper {
-         font-weight: 500;
-         font-size: 24px;
-         color: #272727;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-      }
-
-      div.content>p.sub {
-         font-size: 11px;
-         font-style: italic;
-         font-family: 'Aeonik', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Oxygen-Sans', 'Ubuntu', 'Cantarell', 'Helvetica Neue', sans-serif;
-      }
-   </style>
-
-   <!-- End MFA Modal CSS-->
-
-
-   <div id="mfa-modal" class="modal">
-      <div id="modal-container" class="modal-content">
-         <div class="mfa-step" id="verify-start" style="display: block;">
-            <div class="content">
-               Loading instructions...
+        <div class="ic-Login__body">
+          
+          <form id="login_form" action="/login/canvas" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="Mwvr84CyrUxDABgL5PUPs7cs8Ekr71ETwUPYdNl/lBMGb4+b9tH/DTJmX1K9w2DC9lm+M0zfHH+oeo4Fq1CtXg==" autocomplete="off" />
+            <h1 class="ui-helper-hidden-accessible">
+              Log In
+            </h1>
+            
+            <input type="hidden" name="redirect_to_ssl" value="1"/>
+            <div class="ic-Form-control ic-Form-control--login">
+              <label class="ic-Label" for="pseudonym_session_unique_id">Email</label>
+              <input class="ic-Input text" autofocus="autofocus" type="text" name="pseudonym_session[unique_id]" id="pseudonym_session_unique_id" />
             </div>
-         </div>
+            <div class="ic-Form-control ic-Form-control--login">
+              <label class="ic-Label" for="pseudonym_session_password">Password</label>
+              <input class="ic-Input text" role="textbox" type="password" name="pseudonym_session[password]" id="pseudonym_session_password" />
+            </div>
+            <div class="ic-Login__actions">
+              <div class="ic-Login__actions-timeout">
+                    <input name="pseudonym_session[remember_me]" type="hidden" value="0" autocomplete="off" /><input type="checkbox" value="1" name="pseudonym_session[remember_me]" id="pseudonym_session_remember_me" />
+                    <label for="pseudonym_session_remember_me">Stay signed in</label>
+
+                <div class="ic-Login__forgot">
+                  
+<a class="ic-Login__link forgot_password_link" id="login_forgot_password" href="#">Forgot Password?</a>
+
+                </div>
+              </div>
+              <div class="ic-Form-control ic-Form-control--login">
+                <input type="submit" name="commit" value="Log In" class="Button Button--login" data-disable-with="Log In" />
+              </div>
+            </div> <!-- ic-Login__actions -->
+            
+
+</form>          <form id="forgot_password_form" style="display: none;" action="/forgot_password" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" autocomplete="off" /><input type="hidden" name="authenticity_token" value="4fPUuadMY507y95zq4GPOQSXd5TSygrizmkPZ4yPhFvUl7DR0S8x3EqtmSryt+BIReI57rX6R46nUFkW/qC9Fg==" autocomplete="off" />
+            <h1 class="ui-helper-hidden-accessible">Forgot Password?</h1>
+            <p id="forgot_password_instructions" class="ic-Login__forgot-text">
+              Enter your Email and we&#39;ll send you a link to change your password.
+            </p>
+            <div class="ic-Form-control ic-Form-control--login">
+              <label for="pseudonym_session_unique_id_forgot" class="ic-Label">
+                Email
+              </label>
+              <input aria-describedby="forgot_password_instructions" class="ic-Input email_address text" type="text" name="pseudonym_session[unique_id_forgot]" value="" id="pseudonym_session_unique_id_forgot" />
+
+            </div>
+            <div class="ic-Form-control ic-Form-control--login">
+              <div class="ic-Login__actions">
+                <a class="ic-Login__actions--left ic-Login__link login_link" href="/login">Back to Login</a>
+                <button type="submit" class="Button Button--login">
+                  Request Password
+                </button>
+              </div> <!-- end ic-Login__actions -->
+            </div>
+</form>        </div> <!-- end ic-Login__body -->
+      </div> <!-- end ic-Login__innerContent  -->
+      <footer role="contentinfo" id="footer" class="ic-Login-footer">
+
+        <div id="footer-links" class="ic-Login-footer__links">
+          <a class="support_url help_dialog_trigger" data-track-category="help system" data-track-label="help button" href="https://help.instructure.com">Help</a>
+          <a href="https://awsacademy.instructure.com/privacy_policy">Privacy Policy</a>
+<a href="https://www.instructure.com/policies/canvas-lms-cookie-notice">Cookie Notice</a>
+  <span
+    id="terms_of_service_footer_link"
+    class="
+      terms_of_service_link terms_of_service_footer_link terms-of-service__link
+    "
+  ></span>
+<a href="http://facebook.com/instructure">Facebook</a>
+<a href="http://twitter.com/instructure">X.com</a>
+
+        </div>
+        <a href="http://www.instructure.com" class="ic-Login-footer__logo-link" aria-label="By Instructure">
+          <svg xmlns="http://www.w3.org/2000/svg" width="110" height="16" viewBox="25 265 743 80"><title>Instructure</title>
+<g class="ic-Instructure-Logo">
+	<g>
+		<polygon class="st0" points="23.8,331.5 72.3,358.8 120.7,331.5 72.3,304.2 		"/>
+		<polygon class="st0" points="98.4,293.7 120.7,281.1 98.3,268.5 76,281.1 		"/>
+		<polygon class="st0" points="94.6,266.4 72.3,253.8 49.9,266.4 72.3,279 		"/>
+		<polygon class="st0" points="68.5,281.1 46.2,268.5 23.8,281.1 46.2,293.7 		"/>
+	</g>
+	<g>
+		<path class="st0" d="M166.3,344.9v-78.1h12.9v78.1H166.3z"/>
+		<path class="st0" d="M202,344.9v-78.1H215l16.4,48.3v-48.3h11.8v78.1h-12.3l-17.1-50.7v50.7H202z"/>
+		<path class="st0" d="M357.4,278.2h-13v66.7h-12.9v-66.7h-13v-11.4h39V278.2z"/>
+		<path class="st0" d="M404.6,344.9l-9.9-31.1h-6.5v31.1h-12.9v-78.1h20.2c11.8,0,19.6,4.7,19.6,16.5v13.9c0,7.5-3.1,12.2-8.5,14.5
+			l11.2,33.1H404.6z M388.2,302.7h6.8c4.2,0,7.1-1.6,7.1-7.1v-10.1c0-5.6-2.9-7.1-7.1-7.1h-6.8V302.7z"/>
+		<path class="st0" d="M475.4,329.3c0,12-7.6,16.5-19.4,16.5h-0.4c-11.8,0-19.4-4.4-19.4-16.5v-62.5h12.9v60.5
+			c0,5.6,2.5,7.1,6.7,7.1c4.2,0,6.7-1.6,6.7-7.1v-60.5h12.9V329.3z"/>
+		<path class="st0" d="M536.5,329.3c0,12-7.8,16.5-19.6,16.5h-0.2c-11.8,0-19.6-4.4-19.6-16.5v-46.8c0-11.6,7.8-16.5,19.6-16.5h0.2
+			c11.8,0,19.6,4.9,19.6,16.5v9h-12.9v-7c0-5.5-2.7-7.1-6.8-7.1c-4.1,0-6.8,1.7-6.8,7.1v42.8c0,5.5,2.7,7.1,6.8,7.1
+			c4.1,0,6.8-1.7,6.8-7.1v-8.9h12.9V329.3z"/>
+		<path class="st0" d="M592.1,278.2h-13v66.7h-12.9v-66.7h-13v-11.4h39V278.2z"/>
+		<path class="st0" d="M649,329.3c0,12-7.6,16.5-19.4,16.5h-0.4c-11.8,0-19.4-4.4-19.4-16.5v-62.5h12.9v60.5c0,5.6,2.5,7.1,6.7,7.1
+			c4.2,0,6.7-1.6,6.7-7.1v-60.5H649V329.3z"/>
+		<path class="st0" d="M700.4,344.9l-9.9-31.1H684v31.1H671v-78.1h20.2c11.8,0,19.6,4.7,19.6,16.5v13.9c0,7.5-3.1,12.2-8.5,14.5
+			l11.2,33.1H700.4z M684,302.7h6.8c4.2,0,7.1-1.6,7.1-7.1v-10.1c0-5.6-2.9-7.1-7.1-7.1H684V302.7z"/>
+		<path class="st0" d="M289.8,289.5v-5.7c0-4.9-2.8-6.7-6.6-6.7c-3.8,0-6.6,1.8-6.6,6.7v5.4c0,4,1.3,5.8,5,7.9l9.1,5.1
+			c7.5,4.2,11.9,7.7,11.9,16.1v11.3c0,12-7.5,16.3-19.3,16.3h-0.2c-11.8,0-19.3-4.1-19.3-16.3v-8.4h12.7v6.6c0,4.8,2.8,6.9,6.7,6.9
+			c3.9,0,6.7-2.1,6.7-6.9v-6.1c0-4-1.2-6-5.1-8.1l-9-5.1c-7.6-4.3-11.9-7.9-11.9-16.1V282c0-11.6,8.5-16.1,19.2-16.1h0.2
+			c10.7,0,19.2,4.5,19.2,16.1v7.5H289.8z"/>
+		<polygon class="st0" points="732.5,344.9 732.5,266.9 766.7,266.9 766.7,278.2 745.4,278.2 745.4,299.6 763.3,299.6 763.3,311 
+			745.4,311 745.4,333.5 767,333.5 767,344.9 		"/>
+	</g>
+</g>
+
+</svg>
+
+        </a>
+        <div id="footer-epilogue" class="ic-Login-footer__links">
+          
+  <div class="external" style="text-decoration: none;">Meet the Instructure Learning Platform:</div>
+    <a href="https://www.instructure.com/lms-learning-management-system">Canvas LMS</a>
+    <a href="https://www.instructure.com/k12/products/mastery/mastery-connect">Mastery Connect</a>
+    <a href="https://www.instructure.com/k12/products/elevate/elevate-k12-analytics">Elevate Analytics</a>
+    <a href="https://www.instructure.com/higher-education/products/impact">Impact</a>
+
+
+        </div>
+    </footer>
+    </div> <!-- end ic-Login__content -->
+  </div>
+</div> <!-- end ic-Login -->
+
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+          </aside>
+        </div>
       </div>
+    </div>
+  </div>
 
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  <div id="react-router-portals"></div>
+
+
+  
+
+
+
+
+<script>
+//<![CDATA[
+(window.deferredBundles || (window.deferredBundles = [])).push('usage_metrics');
+(window.bundles || (window.bundles = [])).push('inst_fs_service_worker');
+//]]>
+</script>
+<script src="https://instructure-uploads-pdx.s3.us-west-2.amazonaws.com/account_156910000000000001/attachments/4452648/awsacademy_20240919.js" defer="defer"></script>
+
+
+</div> <!-- #application -->
 </body>
-
 </html>
